@@ -133,8 +133,11 @@ video{
     background-color: #fff;
     right: 0;
     width: 50%;
-    border: 1px solid #000;
     overflow: hidden;
+}
+
+#live-preview-return.active {
+  border: 1px solid #000;
 }
 
 /*#live-preview-return {
@@ -146,6 +149,8 @@ video{
   width: 100%;
   height: 100%;
 }
+
+
 
 /************************TOP-MENU*******************/
 
@@ -212,10 +217,21 @@ video{
   transform: translateY(-10px) rotate(45deg);
 }
 
+#live-preview{
+  position: absolute;
+  right : 70px;
+}
+#live-preview:hover{
+  cursor: pointer;
+}
+
+#live-preview.active{
+  color: #f7519e;
+}
 
 .large{
-  font-size:50px;
-  line-height: 50px;
+  font-size:40px;
+  line-height: 48px;
 }
 
 /************************CHAT*******************/

@@ -79,12 +79,14 @@ $("#live-preview").on("click",function(){
   if($this.hasClass('active')){
     $this.removeClass('active');
     previewReturn.html("");
-    previewReturn.css("");
+    previewReturn.removeAttr('style');
+    previewReturn.removeClass('active');
   }else{
     $this.addClass('active');
     previewReturn.html("<iframe src=" +
              "data:text/html," + encodeURIComponent(data) +
         "></iframe>");
+    previewReturn.addClass('active');
   }
 
 });
