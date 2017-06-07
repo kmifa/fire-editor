@@ -18,7 +18,7 @@ function init(){
 
 googleLogin();
 postNewChat();
-clickMenu();
+clickChatMenu();
 
 }
 
@@ -300,7 +300,7 @@ function postNewChat(){
 //---------------------------------------------------------
 //UI
 //---------------------------------------------------------
-function clickMenu(){
+function clickChatMenu(){
   const menu = $(".menu-trigger");
   const chat = $("#chat-area");
 
@@ -320,4 +320,8 @@ function clickMenu(){
       },300);
     }
   });
+}
+
+function clickMenu(){
+
 }
