@@ -19,7 +19,7 @@ function init(){
 googleLogin();
 postNewChat();
 clickChatMenu();
-
+clickAnke();
 }
 
 var ownEditor;
@@ -322,6 +322,11 @@ function clickChatMenu(){
   });
 }
 
-function clickMenu(){
-
-}
+function clickAnke(){
+  const ankeBtn = $("#anke");
+  const modal = $("#modal-content");
+  ankeBtn.on("click",function(){
+    $this = $(this);
+    modal.show();
+  });
+ }

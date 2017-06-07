@@ -41,6 +41,7 @@
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/foundation-icons.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/modal.css">
 
 <!-- scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -197,9 +198,23 @@
 
 </div>
 
+<div id="modal-content">
+  <div class="inner">
+  <p>アンケートフォーム</p>
+    <form action="output_data.php" method="post">
+      お名前: <input type="text" name="name">
+      EMAIL: <input type="text" name="mail">
+      年齢: <input type="text" name="age">
+
+      <input type="submit" value="送信">
+    </form>
+  </div>
+</div>
+
 <!-- Ace API -->
 <script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/camera.js"></script>
 <script src="js/index.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>

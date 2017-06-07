@@ -1,0 +1,24 @@
+#modal-content {
+  width: 80% ;
+  margin: 0 ;
+  padding: 0 ;
+  background: #fff ;
+  position: fixed ;
+  display: none ;
+  z-index: 251 ;
+}
+
+#modal-overlay {
+  z-index: 250 ;
+  display: none ;
+  position: fixed ;
+  top: 0 ;
+  left: 0 ;
+  width: 100% ;
+  height: 120% ;
+  background-color: rgba( 0,0,0, 0.75 );
+}
+
+.inner{
+  padding: 40px;
+}
