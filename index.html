@@ -45,6 +45,7 @@
 
 <!-- scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 <script src="//webrtc.github.io/adapter/adapter-3.1.3.js"></script>
 <script type="text/javascript" src="https://cdn.skyway.io/skyway.js"></script>
 
@@ -201,20 +202,20 @@
 <div id="modal-content">
   <div class="inner">
   <p>アンケートフォーム</p>
-    <form action="output_data.php" method="post">
-      お名前: <input type="text" name="name">
-      EMAIL: <input type="text" name="mail">
-      年齢: <input type="text" name="age">
-
-      <input type="submit" value="送信">
-    </form>
+    <div id="form">
+      お名前: <input type="text" name="name" id="name" value="shinji">
+      EMAIL: <input type="text" name="mail" id="mail" value="test@gmail.com">
+      年齢: <input type="text" name="age" id="age" value="24">
+      <button id="send">送信</button>
+    </div>
   </div>
 </div>
 
 <!-- Ace API -->
 <script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/camera.js"></script>
+<!-- <script src="js/camera.js"></script> -->
 <script src="js/index.js"></script>
 <script src="js/modal.js"></script>
+<script src="js/postAjax.js"></script>
 </body>
 </html>
